@@ -9,12 +9,22 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
+    line-height: 1.6;
+
 }
 
 img {
     max-width: 100%;
     display: block;
 }
+
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 
 /* =================
 Typography
@@ -49,10 +59,18 @@ strong {
 
 /* h1 subtitle */
 .subtitle {
+    width: 100%;
     font-weight: 700;
     color: #1792d2;
     font-size: .75rem;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+}
+
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .article-title {
@@ -62,6 +80,8 @@ strong {
 .article-read-more,
 .article-info {
     font-size: .875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .article-read-more {
@@ -83,11 +103,13 @@ strong {
 .widget-title,
 .widget-recent-post-title {
     font-size: 1rem;
+    line-height: 1.2;
 }
 
 .widget-title{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 /* =================
@@ -115,7 +137,10 @@ header {
 
 footer{
     background: #143774;
-    color: white;
+    /* color: white; */
+    color: rgba(255,255,255,.65);
+    /* a = alpha */
+    /* alpha = opacity / trasparancy */
     text-align: center;
     padding: 3em 0;
 }
